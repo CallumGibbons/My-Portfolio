@@ -1,0 +1,38 @@
+* {
+ margin: 10px;
+}
+
+div.container {
+  justify-content: space-between;
+  display: flex;
+  max-width: 768px;
+  max-height: 100px;
+}
+
+header {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  min-width: 760px;
+
+  h1 {
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    display: flex;
+    width: 80%;
+  }
+
+  ul {
+    align-items: center;
+    justify-content: end;
+    display: flex;
+    min-height: 60px;
+    justify-content: space-around;
+
+    li {
+      text-align: center;
+      font-size: 15px;
+    }
+  }
+}
