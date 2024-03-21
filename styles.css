@@ -1,56 +1,18 @@
 * {
- margin: 10px;
- align-items: center;
- justify-content: center;
- width: 100%;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
 }
 
 div.container {
   justify-content: center;
   display: flex;
-  width: 100%;
+  max-width: 100%;
+  margin: 10px;
 }
 
 #Nav {
-  max-width: 100%;
-  text-align: center;
-  display: flex;
-  max-height: 50px;
-
-  #navName {
-    width: 20%;
-
-    h1 {
-    font-family: "Karla";
-    align-items: center;
-    justify-content: space-between;
-    font-size: 14px;
-    display: flex;
-    width: 10%;
-
-    }
-  }
-
-  #navList {
-    flex-direction: row;
-    max-height: 50px;
-    max-width: 80%;
-
-    ul {
-      font-family: "Karla";
-      display: flex;
-      justify-content: space-between;
-      max-width: 80%;
-
-      li {
-        max-width: 20%;
-      }
-
-      button {
-        max-width: 20%;
-      }
-    }
-  }
+  display: none;
 }
 
 #softwareDev {
@@ -60,18 +22,20 @@ div.container {
   flex-direction: column;
 
   h1 {
+    margin-top: 50px;
     font-family: "Karla";
     text-align: left;
-    max-width: 80%;
+    width: 80%;
     font-size: 12px;
   }
-   p {
+  p {
+    margin: 10px;
     font-family: "Inconsolata";
     max-width: 80%;
     justify-content: center;
     font-size: 50px;
     text-align: left;
-   }
+  }
 }
 
 #photoAndInfo {
@@ -118,21 +82,47 @@ div.container {
   p {
     font-family: "Inconsolata";
   }
-  
+
   #technicalSkillsImages {
+    margin: 0px;
     display: grid;
     justify-content: center;
     align-items: center;
     grid-gap: 30px;
     grid-template-columns: repeat(3, 23%);
     grid-template-rows: repeat(3, 23%);
+
+    img {
+      margin: 0px;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
 #myProjects {
   flex-direction: column;
+  h1 {
+    font-family: "Karla";
+    font-size: 25px;
+    width: 100%;
+    margin-bottom: 3px;
+  }
+  h2 {
+    font-family: "Inconsolata";
+    font-size: 30px;
+    margin: 0px;
+    width: 100%;
+    text-align: left;
+  }
   #project1 {
     flex-direction: column;
+    h1 {
+      text-align: left;
+      font-family: "Inconsolata";
+      font-size: 20px;
+      
+    }
   }
   #code {
     width: 20%;
@@ -145,20 +135,73 @@ div.container {
   }
   #project2 {
     flex-direction: column;
+    h1 {
+      text-align: left;
+      font-family: "Inconsolata";
+      font-size: 20px;
+    }
   }
   #project3 {
     flex-direction: column;
-  }
-  #buttons {
-    justify-content: flex-start;
+    h1 {
+      text-align: left;
+      font-family: "Inconsolata";
+      font-size: 20px;
+    }
   }
 }
 
 #footer {
+  background-color: black;
   flex-direction: row;
 
   #footerButtons {
     flex-direction: column;
-    width: 10%;
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  #Nav {
+  
+  display: none;
+  max-width: 100%;
+  text-align: center;
+  display: flex;
+  max-height: 50px;
+  }
+
+  #navName {
+    width: 20%;
+
+    h1 {
+      font-family: "Karla";
+      align-items: center;
+      justify-content: space-between;
+      font-size: 14px;
+      display: flex;
+      width: 100%;
+    }
+  }
+
+  #navList {
+    flex-direction: row;
+    max-height: 50px;
+    width: 100%;
+    font-size: 1em;
+
+    ul {
+      font-size: 1em;
+      font-family: "Karla";
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      list-style-type: none;
+
+      li {
+        font-size: 1em;
+        width: 20%;
+      }
+    }
   }
 }
