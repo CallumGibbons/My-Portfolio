@@ -125,14 +125,7 @@ div.container {
       text-align: left;
       font-family: "Inconsolata";
       font-size: 20px;
-      
     }
-  }
-  #code {
-    width: 20%;
-  }
-  #preview {
-    width: 20%;
   }
   h1 {
     text-align: center;
@@ -153,6 +146,12 @@ div.container {
       font-size: 20px;
     }
   }
+
+  #projectsButtons.container {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
 }
 
 #footer.container {
@@ -161,7 +160,7 @@ div.container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
   p {
     color: white;
     font-family: "Inconsolata";
@@ -181,14 +180,13 @@ div.container {
   }
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
   #Nav {
-  
-  display: none;
-  max-width: 100%;
-  text-align: center;
-  display: flex;
-  max-height: 50px;
+    display: none;
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    max-height: 50px;
   }
 
   #navName {
