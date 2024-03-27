@@ -1,16 +1,328 @@
 * {
-    margin: 20px;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
 }
- header {
-    display: inline-block;
- }
-
- h1.header {
-    width: 100px;
- }
-
- nav {
-    display: inline-block;
-    max-width: 50px;
- }
- 
+button {
+  height: 30px;
+  border-radius: 4px;
+  border-color: black;
+  background-color: white;
+  a {
+    font-family: "Inconsolata";
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
+}
+body {
+  margin: 0;
+}
+div.container {
+  justify-content: center;
+  display: flex;
+  max-width: 100%;
+  margin: 10px;
+}
+#Nav {
+  display: none;
+  ul {
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+#softwareDev {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+  #intro {
+    flex-direction: column;
+  }
+  #laptopImage {
+    display: none;
+  }
+  h1 {
+    margin-top: 50px;
+    font-family: "Karla";
+    text-align: left;
+    width: 80%;
+    font-size: 12px;
+  }
+  p {
+    margin: 10px;
+    font-family: "Inconsolata";
+    max-width: 80%;
+    justify-content: center;
+    font-size: 50px;
+    text-align: left;
+  }
+}
+#photoAndInfo {
+  flex-direction: column;
+  img {
+    max-height: 80%;
+    max-width: 80%;
+  }
+}
+#aboutMe {
+  flex-direction: column;
+  display: flex;
+  h1 {
+    font-family: "Inconsolata";
+    text-align: center;
+    width: 100%;
+    max-height: 40px;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  img {
+    align-items: center;
+    justify-content: center;
+    min-width: 80%;
+  }
+  p {
+    font-family: "Karla";
+    width: 90%;
+  }
+}
+#technicalSkills {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h1 {
+    font-family: "Karla";
+    font-size: 25px;
+  }
+  p {
+    font-family: "Inconsolata";
+    margin-bottom: 40px;
+  }
+  #technicalSkillsImages {
+    margin: 0px;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 23%);
+    grid-template-rows: repeat(3, 23%);
+    img {
+      margin: 0px;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+#myProjects {
+  flex-direction: column;
+  #projectsContainer {
+    flex-direction: column;
+  }
+  h1 {
+    font-family: "Karla";
+    font-size: 25px;
+    width: 100%;
+    margin-bottom: 3px;
+  }
+  h2 {
+    font-family: "Inconsolata";
+    font-size: 30px;
+    margin: 0px;
+    width: 100%;
+    text-align: left;
+  }
+  #project1 {
+    flex-direction: column;
+    h1 {
+      text-align: left;
+      font-family: "Inconsolata";
+      font-size: 20px;
+    }
+  }
+  h1 {
+    text-align: center;
+  }
+  #project2 {
+    flex-direction: column;
+    h1 {
+      text-align: left;
+      font-family: "Inconsolata";
+      font-size: 20px;
+    }
+  }
+  #project3 {
+    flex-direction: column;
+    h1 {
+      text-align: left;
+      font-family: "Inconsolata";
+      font-size: 20px;
+    }
+  }
+  #project4 {
+    display: none;
+    flex-direction: column;
+    h1 {
+      text-align: left;
+      font-family: "Inconsolata";
+      font-size: 20px;
+    }
+  }
+  #project5 {
+    display: none;
+    flex-direction: column;
+    h1 {
+      text-align: left;
+      font-family: "Inconsolata";
+      font-size: 20px;
+    }
+  }
+  #project6 {
+    display: none;
+    flex-direction: column;
+    h1 {
+      text-align: left;
+      font-family: "Inconsolata";
+      font-size: 20px;
+    }
+  }
+  #projectsButtons.container {
+    margin: 0;
+    flex-direction: row;
+    min-width: 100%;
+    justify-content: left;
+    #code {
+      margin-right: 30px;
+    }
+  }
+}
+#footer.container {
+  margin: 0;
+  background-color: black;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: white;
+    font-family: "Inconsolata";
+    margin-bottom: 30px;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+  #footerButtons {
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #Nav {
+    display: none;
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    max-height: 50px;
+  }
+  #navName {
+    width: 20%;
+    h1 {
+      font-family: "Karla";
+      align-items: center;
+      justify-content: space-between;
+      font-size: 14px;
+      display: flex;
+      width: 100%;
+    }
+  }
+  #navList {
+    flex-direction: row;
+    max-height: 50px;
+    width: 100%;
+    font-size: 1em;
+    ul {
+      font-size: 1em;
+      font-family: "Karla";
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      list-style-type: none;
+      li {
+        font-size: 1em;
+        width: 20%;
+      }
+    }
+  }
+  #softwareDev {
+    flex-direction: row;
+    margin: none;
+    #intro {
+      min-width: 70%;
+      min-height: 100%;
+    }
+    #laptopImage {
+      margin: none;
+      display: flex;
+      max-width: 30%;
+      min-height: 100%;
+    }
+  }
+  #aboutMe {
+    img {
+      max-width: 33%;
+      max-height: 20%;
+    }
+    #photoAndInfo {
+      flex-direction: row;
+    }
+  }
+  #technicalSkills {
+    #technicalSkillsImages {
+      margin: 0px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      grid-gap: 0px;
+      grid-template-columns: repeat(9, 10%);
+      grid-template-rows: repeat(1, 60%);
+      min-width: 60%;
+    }
+  }
+  #myProjects {
+    #projectsContainer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      #project1 {
+        display: inherit;
+        width: 30%;
+      }
+      #project2 {
+        display: inherit;
+        width: 30%;
+      }
+      #project3 {
+        display: inherit;
+        width: 30%;
+      }
+      #project4 {
+        display: inherit;
+        width: 30%;
+      }
+      #project5 {
+        display: inherit;
+        width: 30%;
+      }
+      #project6 {
+        display: inherit;
+        width: 30%;
+      }
+    }
+  }
+}
