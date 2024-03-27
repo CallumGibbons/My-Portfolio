@@ -17,6 +17,12 @@ div.container {
 
 #Nav {
   display: none;
+  ul {
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
 }
 
 #softwareDev {
@@ -100,6 +106,7 @@ div.container {
 
   #technicalSkillsImages {
     margin: 0px;
+    height: 100%;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -166,7 +173,7 @@ div.container {
 
     button {
       height: 30px;
-      border-radius:4px;
+      border-radius: 4px;
       border-color: black;
 
       a {
@@ -264,6 +271,29 @@ div.container {
       display: flex;
       max-width: 30%;
       min-height: 100%;
+    }
+  }
+
+  #aboutMe {
+    img {
+      max-width: 33%;
+      max-height: 20%;
+    }
+    #photoAndInfo {
+      flex-direction: row;
+    }
+  }
+
+  #technicalSkills {
+    #technicalSkillsImages {
+      margin: 0px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      grid-gap: 0px;
+      grid-template-columns: repeat(9, 10%);
+      grid-template-rows: repeat(1, 60%);
+      min-width: 60%;
     }
   }
 }
