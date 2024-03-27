@@ -4,6 +4,19 @@
   max-width: 100%;
 }
 
+button {
+  height: 30px;
+  border-radius: 4px;
+  border-color: black;
+  background-color: white;
+
+  a {
+    font-family: "Inconsolata";
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
+}
 body {
   margin: 0;
 }
@@ -200,20 +213,6 @@ div.container {
     flex-direction: row;
     min-width: 100%;
     justify-content: left;
-
-    button {
-      height: 30px;
-      border-radius: 4px;
-      border-color: black;
-
-      a {
-        font-family: "Inconsolata";
-        text-align: center;
-        text-decoration: none;
-        color: black;
-      }
-    }
-
     #code {
       margin-right: 30px;
     }
