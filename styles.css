@@ -124,12 +124,16 @@ div.container {
 
 #myProjects {
   flex-direction: column;
+  #projectsContainer {
+    flex-direction: column;
+  }
   h1 {
     font-family: "Karla";
     font-size: 25px;
     width: 100%;
     margin-bottom: 3px;
   }
+
   h2 {
     font-family: "Inconsolata";
     font-size: 30px;
@@ -164,7 +168,33 @@ div.container {
       font-size: 20px;
     }
   }
-
+  #project4 {
+    display: none;
+    flex-direction: column;
+    h1 {
+      text-align: left;
+      font-family: "Inconsolata";
+      font-size: 20px;
+    }
+  }
+  #project5 {
+    display: none;
+    flex-direction: column;
+    h1 {
+      text-align: left;
+      font-family: "Inconsolata";
+      font-size: 20px;
+    }
+  }
+  #project6 {
+    display: none;
+    flex-direction: column;
+    h1 {
+      text-align: left;
+      font-family: "Inconsolata";
+      font-size: 20px;
+    }
+  }
   #projectsButtons.container {
     margin: 0;
     flex-direction: row;
@@ -294,6 +324,37 @@ div.container {
       grid-template-columns: repeat(9, 10%);
       grid-template-rows: repeat(1, 60%);
       min-width: 60%;
+    }
+  }
+  #myProjects {
+    #projectsContainer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      #project1 {
+        display: inherit;
+        width: 30%;
+      }
+      #project2 {
+        display: inherit;
+        width: 30%;
+      }
+      #project3 {
+        display: inherit;
+        width: 30%;
+      }
+      #project4 {
+        display: inherit;
+        width: 30%;
+      }
+      #project5 {
+        display: inherit;
+        width: 30%;
+      }
+      #project6 {
+        display: inherit;
+        width: 30%;
+      }
     }
   }
 }
